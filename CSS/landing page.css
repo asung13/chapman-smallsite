@@ -1,0 +1,45 @@
+
+body{
+    
+}
+
+.container{
+    
+}
+
+#navbar{
+    overflow: hidden;
+    background-color: #783532;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    display: block;
+    z-index: 1;
+    font-family: "Georgia", serif;
+    font-size: 25pt;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+#navbar a{
+    display: inline-block;
+    padding: 14px;
+    color: #F6EACB;
+    text-decoration: none;
+}
+
+#navbar a:hover{
+    background-color: #662B28;
+}
+
+#navbar a:active{
+    background-color: #F6EACB;
+}
+
+.gif{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}

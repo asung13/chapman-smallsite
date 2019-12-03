@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Image Gallery</title>
+
+<link href="CSS/image%20gallery%202.css" type="text/css" rel="stylesheet">
+    
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+    
+    <style>
+        body {
+        background-image: url(images/image%20gallery%20background.jpg);
+        background position: center;
+        background-size: cover;
+        }
+    </style>
+
+</head>
+    
+<body>
+    <div id="navbar">
+      <a href="Landing%20Page.html">Home</a>
+      <a href="Biography.html">Biography</a>
+      <a href="Discography3.html">Discography</a>
+      <a href="image%20gallery%202.html">Image Gallery</a>
+    </div>
+
+    <div class="container">
+    <div class="w3-content w3-display-container" style="max-width:800px">
+        <img class="mySlides" src="images/4ALDEAN0218.jpg" style="width:100%">
+        <img class="mySlides" src="images/5d90c6eeef47a.image.jpg"style="width:100%">
+        <img class="mySlides" src="images/jason-aldean-PublicityShot.jpg" style="width:100%">
+        <img class="mySlides" src="images/41352c66.jpg" style="width:100%">
+        <img class="mySlides" src="images/03-jasonaldean_review-0821-dak__22288601.jpg" style="width:100%">
+        <img class="mySlides" src="images/GTY_jason_aldean_jef_140605_16x9_1600.jpg" style="width:100%">
+        <img class="mySlides" src="images/cmt1.jpg" style="width:100%">
+        <img class="mySlides" src="images/jason-aldean-1.jpg" style="width:100%">
+        <img class="mySlides" src="images/jason-aldean-children-.jpg" style="width:100%">
+        <img class="mySlides" src="images/01-Jason-Aldean-press-by-Joseph-Llanes-NEW-2019-billboard-1548.jpg" style="width:100%">
+        <img class="mySlides" src="images/180401_jasonaldean_0980-brown3.jpg" style="width:100%">
+        <img class="mySlides" src="images/Jason%20Aldean.jpeg" style="width:100%">
+        
+    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(8)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(9)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(10)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(11)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(12)"></span>
+    
+  </div>
+</div>
+        </div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html> 
+
